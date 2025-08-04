@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e1e2f, #7d7dc2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculator {
+  background: #2b2b3d;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  width: 320px;
+  max-width: 90%;
+}
+
+.calculator-input {
+  width: 300px;              /* Sabit genişlik */
+  height: 60px;
+  border: none;
+  background: #1c1c2e;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;        /* Yazıyı ortaya al */
+  margin: 0 auto 20px auto;  /* Kutuyu ortala */
+  display: block;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+}
+
+
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 60px;
+  gap: 15px;
+}
+
+.calculator-keys button {
+  border: none;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.number, .decimal {
+  background: #393955;
+  color: #fff;
+}
+
+.number:hover, .decimal:hover {
+  background: #4c4c74;
+}
+
+.operator {
+  background: #ff6b6b;
+  color: #fff;
+}
+
+.operator:hover {
+  background: #ff4c4c;
+}
+
+.equal-sign {
+  grid-column: span 4;
+  background: #00d1b2;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  height: 60px;
+  border-radius: 12px;
+}
+
+.equal-sign:hover {
+  background: #00b89c;
+}
+
+.clear {
+  background: #f9ca24;
+  color: #2f2f2f;
+  font-weight: bold;
+}
+
+.clear:hover {
+  background: #f6b700;
+}
+
+/* Geçmiş alanı */
+.history {
+  color: #aaa;
+  font-size: 0.9rem;
+  text-align: right;
+  margin-bottom: 5px;
+  min-height: 1rem;
+}
+
+/* Kopyalama butonu */
+.copy-btn {
+  width: 100%;
+  background: #444;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  transition: background 0.3s ease;
+}
+
+.copy-btn:hover {
+  background: #555;
+}
