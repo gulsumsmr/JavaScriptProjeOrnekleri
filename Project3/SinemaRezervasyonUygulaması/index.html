@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sinema Rezervasyon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sinema Koltuk Rezervasyonu</h1>
+    
+    <div class="movie-container">
+      <label>Film Seç:</label>
+      <select id="movie">
+        <option value="50">Inception (50₺)</option>
+        <option value="60">Oppenheimer (60₺)</option>
+        <option value="40">Avatar 2 (40₺)</option>
+      </select>
+    </div>
+
+    <ul class="legend">
+      <li><span class="seat"></span> Boş</li>
+      <li><span class="seat selected"></span> Seçili</li>
+      <li><span class="seat occupied"></span> Dolu</li>
+    </ul>
+
+    <div class="seating-area">
+      <div class="screen">PERDE</div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <p class="info">
+      Seçilen Koltuk: <span id="count">0</span> | Toplam: <span id="total">0</span> ₺
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
